@@ -1,0 +1,36 @@
+<div class="image-container">
+  <img src="https://png.pngtree.com/background/20230610/original/pngtree-kitchen-scene-is-shown-in-an-anime-style-picture-image_3069333.jpg" alt="Imagen de ejemplo">
+</div>
+
+<div class="review-container">
+  <!-- Mostrar los reviews existentes -->
+  <div *ngIf="data.length > 0">
+    <ul>
+      <li *ngFor="let review of data" class="review-card">
+        <h3>{{ review.titulo }}</h3>
+        <p>{{ review.resena }}</p>
+        <p>Puntuación: {{ review.puntuacion }}</p>
+        <button (click)="deleteReview(review.reviewId)" class="delete-button">Eliminar</button>
+      </li>
+    </ul>
+  </div>
+
+  
+
+  <!-- Formulario para agregar una nueva review -->
+  <div class="card">
+    <h2>Agregar una nueva review</h2>
+    <form (submit)="agregarReview()" class="review-form">
+      <div class="form-group">
+        <input type="text" id="titulo" name="titulo" [(ngModel)]="nuevoReview.titulo" required placeholder="Título">
+      </div>
+      <div class="form-group">
+        <textarea id="resena" name="resena" [(ngModel)]="nuevoReview.resena" required placeholder="Reseña"></textarea>
+      </div>
+      <div class="form-group">
+        <input type="number" id="puntuacion" name="puntuacion" [(ngModel)]="nuevoReview.puntuacion" required placeholder="Puntuación">
+      </div>
+      <button type="submit" class="submit-button">Agregar</button>
+    </form>
+  </div>
+</div>

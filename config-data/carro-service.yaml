@@ -1,0 +1,10 @@
+server:
+  port: 8002
+eureka:
+  client:
+    fetch-registry: true
+    register-wuth-eureka: true
+    service-url:
+      defaultZone: http://host.docker.internal:8761/eureka/
+    instance:
+      hostname: localhost

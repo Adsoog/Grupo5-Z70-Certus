@@ -1,0 +1,15 @@
+server:
+  port: 8005
+eureka:
+  client:
+    fetch-registry: true
+    register-wuth-eureka: true
+    service-url:
+      default-zone: http://localhost:8761/eureka
+    instance:
+      hostname: localhost
+spring:
+  data:
+    mongodb:
+      uri : mongodb+srv://adso:adso@cluster0.vc1sjyn.mongodb.net/?retryWrites=true&w=majority
+      database : Task

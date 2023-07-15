@@ -1,0 +1,32 @@
+<body>
+  <div class="image-container">
+    <img src="https://wallpapers.com/images/hd/overcooked-white-male-chef-jkp0wefxa6mr89w5.jpg" alt="Imagen de fondo">
+  </div>
+
+  <div class="container">
+    <h2 class="title">Listado de Platillos</h2>
+
+    <div class="moto-list">
+      <div class="moto-list-item" *ngFor="let moto of data">
+        <div class="moto-details">
+          <span class="moto-marca">{{ moto.marca }}</span>
+          <span class="moto-modelo">{{ moto.modelo }}</span>
+        </div>
+      </div>
+    </div>
+
+    <h2>Agregar Platillo</h2>
+
+    <form (ngSubmit)="agregarMoto()" class="form">
+      <div class="form-group">
+        <label>Plato: </label>
+        <input type="text" [(ngModel)]="nuevaMoto.marca" name="marca">
+      </div>
+      <div class="form-group">
+        <label>Tipo: </label>
+        <input type="text" [(ngModel)]="nuevaMoto.modelo" name="modelo">
+      </div>
+      <button type="submit" class="green-button">Agregar</button>
+    </form>
+  </div>
+</body>

@@ -1,0 +1,32 @@
+header {
+    background-color: #333;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .navbar__list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar__item {
+    display: inline;
+    margin-right: 10px;
+  }
+  
+  .navbar__link {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px;
+  }
+  
+  .navbar__link:hover {
+    background-color: #555;
+  }
+  

@@ -1,0 +1,56 @@
+<body>
+  <div class="image-container">
+    <img src="https://wallpapers.com/images/hd/overcooked-white-male-chef-jkp0wefxa6mr89w5.jpg" alt="Imagen de fondo">
+  </div>
+
+  <div class="container">
+    <!-- Formulario para agregar un nuevo Delivery -->
+    <form (ngSubmit)="agregarDelivery()" class="delivery-form">
+      <h2 class="title">Agregar un nuevo Delivery</h2>
+      <div class="form-group">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" [(ngModel)]="nuevoDelivery.nombre" name="nombre" required>
+      </div>
+      <div class="form-group">
+        <label for="comida">Comida:</label>
+        <input type="text" id="comida" [(ngModel)]="nuevoDelivery.comida" name="comida" required>
+      </div>
+      <div class="form-group">
+        <label for="direccion">Dirección:</label>
+        <input type="text" id="direccion" [(ngModel)]="nuevoDelivery.direccion" name="direccion" required>
+      </div>
+      <div class="form-group">
+        <label for="precio">Precio:</label>
+        <input type="number" id="precio" [(ngModel)]="nuevoDelivery.precio" name="precio" required>
+      </div>
+      <div class="form-group">
+        <label for="usuarioId">ID de Usuario:</label>
+        <input type="number" id="usuarioId" [(ngModel)]="nuevoDelivery.usuarioId" name="usuarioId" required>
+      </div>
+      <button type="submit">Agregar</button>
+    </form>
+
+    <!-- Lista de Deliveries -->
+    <h2 class="title">Lista de Deliveries</h2>
+    <table>
+      <tr>
+        <th>ID</th>
+        <th>Nombre</th>
+        <th>Comida</th>
+        <th>Dirección</th>
+        <th>Precio</th>
+        <th>ID de Usuario</th>
+        <th>Acciones</th> <!-- Columna adicional para el botón de borrado -->
+      </tr>
+      <tr *ngFor="let delivery of data">
+        <td>{{ delivery.id }}</td>
+        <td>{{ delivery.nombre }}</td>
+        <td>{{ delivery.comida }}</td>
+        <td>{{ delivery.direccion }}</td>
+        <td>{{ delivery.precio }}</td>
+        <td>{{ delivery.usuarioId }}</td>
+        <td><button (click)="borrarDelivery(delivery.id)">Borrar</button></td> <!-- Botón de borrado -->
+      </tr>
+    </table>
+  </div>
+</body>

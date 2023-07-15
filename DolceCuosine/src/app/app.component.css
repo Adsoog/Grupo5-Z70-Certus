@@ -1,0 +1,77 @@
+/* Estilos generales */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 98.3vh;
+  }
+  
+  .container {
+    flex: 1;
+  }
+  
+  header {
+    background-color: #333;
+    padding: 10px;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 10px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  section {
+    padding: 20px;
+  }
+  
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  /* Estilos específicos */
+  h1, h2 {
+    color: #333;
+  }
+  
+  #home {
+    background-color: #f9f9f9;
+  }
+  
+  #delivery {
+    background-color: #ebebeb;
+  }
+  
+  #reviews {
+    background-color: #f9f9f9;
+  }
+  
+  #users {
+    background-color: #ebebeb;
+  }
+  
+  
+  .sticky_footer {
+    position: sticky;
+    top: 100%;
+  }
+  

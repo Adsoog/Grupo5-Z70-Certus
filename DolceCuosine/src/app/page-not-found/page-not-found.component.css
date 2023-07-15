@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  .error-container {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: flex-end; /* Ajustamos la alineación vertical */
+    justify-content: center;
+  }
+
+  .background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(https://preview.redd.it/1sq74cq8tzt81.png?auto=webp&s=4ba49d157a284307fbfd57bc55f8fea9c2e8ba9e);
+    background-size: cover;
+    background-position: center;
+    opacity: 0.8;
+  }
+
+  .content {
+    text-align: center;
+    z-index: 1;
+    margin-bottom: 85px; /* Ajustamos el margen inferior */
+  }
+
+  h1 {
+    font-size: 6rem;
+    margin: 0;
+    color: #fff;
+  }
+
+  p {
+    font-size: 1.5rem;
+    margin: 20px 0 0;
+    color: #fff;
+  }

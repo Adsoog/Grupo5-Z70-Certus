@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Página web con fondo de Overcooked</title>
+  <style>
+    body {
+      background-image: url('https://mobimg.b-cdn.net/v3/fetch/52/52343319034c9a5dca3d12f3836450fb.jpeg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .container {
+      max-width: 1330px;
+      margin: 0 auto;
+      padding: 40px;
+      text-align: center;
+      color: black;
+      text-shadow: 2px 2px 4px rgb(255, 242, 242);
+      opacity: 100%;
+    }
+
+    .a {
+      background-color: #fff;
+      width: 1330px;     
+      height: 550px;
+      margin-top: 65px;
+      margin-bottom: 65px;
+      margin-left: 65px;
+      margin-right: 65px;
+      opacity: 75%;
+      border-radius: 8%;
+    }
+
+    .img {
+      position: absolute;
+      top: 200px;
+      left: 1100px;
+    }
+    
+    h1 {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+    
+    p {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+    
+    header {
+      background-color: #333;
+      padding: 10px;
+      font-family: Arial, sans-serif;
+    }
+  
+    .navbar {
+      display: flex;
+      justify-content: center;
+    }
+  
+    .navbar__list {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+  
+    .navbar__item {
+      display: inline;
+      margin-right: 10px;
+    }
+  
+    .navbar__link {
+      color: #fff;
+      text-decoration: none;
+      padding: 5px;
+    }
+  
+    .navbar__link:hover {
+      background-color: #555;
+    }
+    
+    footer.sticky_footer {
+      background-color: #f2f2f2;
+      padding: 10px;
+      text-align: center;
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      font-size: 14px;
+      font-family: Arial, sans-serif;
+      color: #333;
+      letter-spacing: 1px;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <ul class="navbar__list">
+        <li class="navbar__item"><a class="navbar__link" routerLink="/home">Home</a></li>
+        <li class="navbar__item"><a class="navbar__link" routerLink="/plato">Platos</a></li>
+        <li class="navbar__item"><a class="navbar__link" routerLink="/delivery">Delivery</a></li>
+        <li class="navbar__item"><a class="navbar__link" routerLink="/review">Reseñas</a></li>
+        <li class="navbar__item"><a class="navbar__link" routerLink="/users">Usuarios</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <div class="box a">
+    <div class="container">
+      <h1>Bienvenido a la página web de Dolce Cuisine</h1>
+<p>Disfruta de la deliciosa experiencia culinaria</p>
+<p>Agrega aquí tu contenido personalizado</p>
+
+    </div>
+  </div>
+  
+  <div class="img">
+    <img src="E:\Java\microservicios\DolceCuosine\src\app\home\personaje 1.png" alt="" width="200" height="200">
+  </div>
+  
+  <footer class="sticky_footer">
+    <p>&copy; 2023 Dolce Cuisine - Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>

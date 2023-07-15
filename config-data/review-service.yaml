@@ -1,0 +1,16 @@
+server:
+  port: 8004
+eureka:
+  client:
+    fetch-registry: true
+    register-wuth-eureka: true
+    service-url:
+      defaultZone: http://host.docker.internal:8761/eureka/
+    instance:
+      hostname: localhost
+
+spring:
+  data:
+    mongodb:
+      uri : mongodb+srv://adso:adso@cluster0.vc1sjyn.mongodb.net/?retryWrites=true&w=majority
+      database : Task

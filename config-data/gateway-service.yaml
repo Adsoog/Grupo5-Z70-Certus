@@ -1,0 +1,42 @@
+server:
+  port: 8010
+eureka:
+  client:
+    fetch-registry: true
+    register-wuth-eureka: true
+    service-url:
+      defaultZone: http://host.docker.internal:8761/eureka/
+    instance:
+      hostname: localhost
+
+spring:
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+      routes:
+       - id: usuario-service
+         uri: lb://usuario-service
+         predicates:
+           - Path=/usuario/**
+
+       - id: carro-service
+         uri: lb://carro-service
+         predicates:
+           - Path=/carro/**
+
+       - id: moto-service
+         uri: lb://moto-service
+         predicates:
+           - Path=/moto/**
+           
+       - id: delivery-service
+         uri: lb://delivery-service
+         predicates:
+           - Path=/delivery/**
+
+       - id: review-service
+         uri: lb://review-service
+         predicates:
+           - Path=/review/**

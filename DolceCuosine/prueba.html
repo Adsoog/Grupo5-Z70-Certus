@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dolce Cuisine - Restaurante</title>
+  <style>
+    /* Estilos generales */
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .container {
+      flex: 1;
+    }
+
+    header {
+      background-color: #333;
+      padding: 10px;
+    }
+
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li {
+      display: inline;
+      margin-right: 10px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    section {
+      padding: 20px;
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+    }
+
+    /* Estilos específicos */
+    h1, h2 {
+      color: #333;
+    }
+
+    #home {
+      background-color: #f9f9f9;
+    }
+
+    #delivery {
+      background-color: #ebebeb;
+    }
+
+    #reviews {
+      background-color: #f9f9f9;
+    }
+
+    #users {
+      background-color: #ebebeb;
+    }
+
+    /* Sticky Footer */
+    .push {
+      flex: 1;
+    }
+
+    footer {
+      position: sticky;
+      bottom: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#delivery">Delivery</a></li>
+          <li><a href="#reviews">Reseñas</a></li>
+          <li><a href="#users">Usuarios</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="home">
+      <h1>Bienvenido a Dolce Cuisine</h1>
+      <p>Saborea los mejores platos en nuestro acogedor restaurante.</p>
+    </section>
+
+    <section id="delivery">
+      <h2>Delivery</h2>
+      <p>Disfruta de nuestros deliciosos platos en la comodidad de tu hogar.</p>
+    </section>
+
+    <section id="reviews">
+      <h2>Reseñas</h2>
+      <p>Aquí encontrarás las opiniones de nuestros clientes satisfechos.</p>
+    </section>
+
+    <section id="users">
+      <h2>Usuarios</h2>
+      <p>Regístrate para recibir promociones exclusivas y realizar pedidos en línea.</p>
+    </section>
+
+    <div class="push"></div>
+  </div>
+
+  <footer>
+    <p>&copy; 2023 Dolce Cuisine - Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>
